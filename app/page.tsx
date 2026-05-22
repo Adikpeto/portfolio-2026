@@ -50,6 +50,7 @@ const splitLetters = (word: string): JSX.Element[] => {
       <span
         key={letter + "_" + i}
         ref={(el: HTMLSpanElement | null) => {
+          //@ts-ignore
           if (el) refs.current.push(el)
         }}
       >
@@ -243,9 +244,12 @@ function getPathEndPointInDOM(
                   <div className="animate-card absolute inset-0 z-10 flex flex-col p-5 bg-black/20">
                     <h2 className="text-[#fff] text-base">
                           SHOP-COMMERCE. 
-                      <Link href="/detail" className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
-                        <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
+                      <Link href={"/detail"}>
+                         <div className="btn-plus mb-2 w-fit p-[3px] mt-3 rounded-full bg-[black]">
+                          <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
+                        </div>
                       </Link>
+                      
                     </h2>
                     <div className="text-white text-4xl font-bold">
                       BRAND IDENTITY - CREATIVE DIRECTION - DIGITAL DESIGN - WEB DEVELOPMENT
@@ -269,8 +273,10 @@ function getPathEndPointInDOM(
                 <div className="animate-card absolute inset-0 z-10 flex flex-col p-5 bg-black/20">
                    <h2 className="text-[#fff] text-base">
                           SHOP-COMMERCE. 
-                      <Link href="/detail" className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
-                        <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
+                      <Link href={"/detail"}>
+                         <div className="btn-plus mb-2 w-fit p-[3px] mt-3 rounded-full bg-[black]">
+                          <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
+                        </div>
                       </Link>
                     </h2>
                   <div className="text-white text-4xl font-bold">
@@ -317,8 +323,10 @@ function getPathEndPointInDOM(
                 <div className="animate-card absolute inset-0 z-10 flex flex-col p-5 bg-black/20">
                   <h2 className="text-[#fff] text-base">
                           SHOP-COMMERCE. 
-                      <Link href="/detail" className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
-                        <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
+                       <Link href={"/detail"}>
+                         <div className="btn-plus mb-2 w-fit p-[3px] mt-3 rounded-full bg-[black]">
+                          <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
+                        </div>
                       </Link>
                     </h2>
                   <div className="text-white text-4xl font-bold">
@@ -343,8 +351,10 @@ function getPathEndPointInDOM(
                  <div className="animate-card absolute inset-0 z-10 flex flex-col p-5 bg-black/20">
                    <h2 className="text-[#fff] text-base">
                           SHOP-COMMERCE. 
-                      <Link href="/detail" className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
-                        <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
+                       <Link href={"/detail"}>
+                         <div className="btn-plus mb-2 w-fit p-[3px] mt-3 rounded-full bg-[black]">
+                          <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
+                        </div>
                       </Link>
                     </h2>
                   <div className="text-white text-4xl font-bold">
@@ -388,8 +398,10 @@ function getPathEndPointInDOM(
                 <div className="animate-card absolute inset-0 z-10 flex flex-col p-5 bg-black/20">
                    <h2 className="text-[#fff] text-base">
                           SHOP-COMMERCE. 
-                      <Link href="/detail" className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
-                        <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
+                      <Link href={"/detail"}>
+                         <div className="btn-plus mb-2 w-fit p-[3px] mt-3 rounded-full bg-[black]">
+                          <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
+                        </div>
                       </Link>
                     </h2>
                   <div className="text-white text-4xl font-bold">

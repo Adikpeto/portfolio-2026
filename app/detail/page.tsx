@@ -153,13 +153,15 @@ export default function ProjectDetail() {
           </div>
         </div>
 
-        <div className="spoolight" style={{ marginTop: "10rem" }}>
+        <div className="spoolight" style={{ marginTop: "4rem" }}>
 
           {/* ─── HERO ─── */}
           <div className="header w-full">
             <div className="header-container flex flex-col">
-              <div ref={heroTitleRef} className="header-title uppercase" style={{ fontSize: "6rem", lineHeight: "5.5rem" }}>
-                SHOP-COMMERCE. <br /> PROJECT DETAIL
+              <div ref={heroTitleRef} className="header-title uppercase" style={{ fontSize: "6rem"}}>
+                <span style={{width:"fit-content", color:"white", backgroundColor:"black",margin:"0px",padding:"0px"}}>SHOP-COMMERCE.</span> <br />
+                <span style={{width:"fit-content", color:"black", backgroundColor:"white",margin:"0px",padding:"0px"}}>PROJECT DETAIL</span>
+                
               </div>
               <div ref={heroMetaRef} className="body mt-10">
                 <p className="text-2xl text-gray-500">
@@ -193,7 +195,7 @@ export default function ProjectDetail() {
           </div>
 
           {/* ─── HERO IMAGE ─── */}
-          <ParallaxImage src="/cap13.png" alt="Shop-Commerce Hero" strength={0.35} height={"80vh"} width={"90vw"} />
+          <ParallaxImage src="/7.webp" alt="Shop-Commerce Hero" strength={0.35} height={"80vh"} width={"90vw"} />
 
           {/* ─── THE CHALLENGE ─── */}
           <section ref={challengeRef} className="w-[80%] section margin-top border-bottom-black border-2">
@@ -215,7 +217,7 @@ export default function ProjectDetail() {
 
           {/* ─── FULL WIDTH IMAGE ─── */}
           <div className="w-[90vw] my-10">
-            <ParallaxImage src="/cap10.png" alt="Process" strength={0.25} height={"70vh"} width={"90vw"} />
+            <ParallaxImage src="/6.webp" alt="Process" strength={0.25} height={"70vh"} width={"90vw"} />
           </div>
 
           {/* ─── THE SOLUTION ─── */}
@@ -241,25 +243,25 @@ export default function ProjectDetail() {
               {/* Row 1 - Two images side by side */}
               <div className="w-full flex flex-row gap-5 justify-center items-center">
                 <div className="gallery-item relative min-w-[40vw] min-h-[50vh] max-w-[40vw] max-h-[50vh] overflow-hidden">
-                  <ParallaxImage src="/cap2.png" alt="Detail 1" strength={0.35} height={"60vh"} width={"50vw"} />
+                  <ParallaxImage src="/7.webp" alt="Detail 1" strength={0.35} height={"60vh"} width={"50vw"} />
                 </div>
                 <div className="gallery-item relative min-w-[40vw] min-h-[50vh] max-w-[40vw] max-h-[50vh] overflow-hidden">
-                  <ParallaxImage src="/cap9.png" alt="Detail 2" strength={0.35} height={"60vh"} width={"50vw"} />
+                  <ParallaxImage src="/2.webp" alt="Detail 2" strength={0.35} height={"60vh"} width={"50vw"} />
                 </div>
               </div>
 
               {/* Row 2 - Full width */}
               <div className="gallery-item w-full">
-                <ParallaxImage src="/cap1.png" alt="Detail 3" strength={0.2} height={"60vh"} width={"82vw"} />
+                <ParallaxImage src="/9.webp" alt="Detail 3" strength={0.2} height={"60vh"} width={"82vw"} />
               </div>
 
               {/* Row 3 - Two images side by side */}
               <div className="w-full flex flex-row gap-5 justify-center items-center">
                 <div className="gallery-item relative min-w-[40vw] min-h-[50vh] max-w-[40vw] max-h-[50vh] overflow-hidden">
-                  <ParallaxImage src="/cap12.png" alt="Detail 4" strength={0.35} height={"60vh"} width={"50vw"} />
+                  <ParallaxImage src="/2.webp" alt="Detail 4" strength={0.35} height={"60vh"} width={"50vw"} />
                 </div>
                 <div className="gallery-item relative min-w-[40vw] min-h-[50vh] max-w-[40vw] max-h-[50vh] overflow-hidden">
-                  <ParallaxImage src="/cap1.png" alt="Detail 5" strength={0.35} height={"60vh"} width={"50vw"} />
+                  <ParallaxImage src="/11.webp" alt="Detail 5" strength={0.35} height={"60vh"} width={"50vw"} />
                 </div>
               </div>
             </div>
@@ -347,7 +349,7 @@ export default function ProjectDetail() {
                   </div>
                 </div>
                 <div className="relative min-w-[50vw] min-h-[40vh] max-w-[50vw] max-h-[40vh] overflow-hidden">
-                  <ParallaxImage src="/cap10.png" alt="Next Project" strength={0.35} height={"70vh"} width={"60vw"} />
+                  <ParallaxImage src="/8.webp" alt="Next Project" strength={0.35} height={"70vh"} width={"60vw"} />
                   <div className="absolute inset-0 z-10 bg-black/10 group-hover:bg-black/0 transition-all duration-500" />
                 </div>
               </div>
