@@ -10,6 +10,7 @@ import ParallaxImage from "./components/ParallaxImage";
 import Footer from "./components/Footer";
 import BezierDivider from "./components/BezierDivider";
 import WaterImage from "./components/WaterImg";
+import Link from "next/link";
 
 const phrase = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.";
 
@@ -242,9 +243,9 @@ function getPathEndPointInDOM(
                   <div className="animate-card absolute inset-0 z-10 flex flex-col p-5 bg-black/20">
                     <h2 className="text-[#fff] text-base">
                           SHOP-COMMERCE. 
-                      <div className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
+                      <Link href="/detail" className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
                         <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
-                      </div>
+                      </Link>
                     </h2>
                     <div className="text-white text-4xl font-bold">
                       BRAND IDENTITY - CREATIVE DIRECTION - DIGITAL DESIGN - WEB DEVELOPMENT
@@ -268,9 +269,9 @@ function getPathEndPointInDOM(
                 <div className="animate-card absolute inset-0 z-10 flex flex-col p-5 bg-black/20">
                    <h2 className="text-[#fff] text-base">
                           SHOP-COMMERCE. 
-                      <div className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
+                      <Link href="/detail" className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
                         <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
-                      </div>
+                      </Link>
                     </h2>
                   <div className="text-white text-4xl font-bold">
                     BRAND IDENTITY - CREATIVE DIRECTION - DIGITAL DESIGN - WEB DEVELOPMENT
@@ -316,9 +317,9 @@ function getPathEndPointInDOM(
                 <div className="animate-card absolute inset-0 z-10 flex flex-col p-5 bg-black/20">
                   <h2 className="text-[#fff] text-base">
                           SHOP-COMMERCE. 
-                      <div className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
+                      <Link href="/detail" className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
                         <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
-                      </div>
+                      </Link>
                     </h2>
                   <div className="text-white text-4xl font-bold">
                     BRAND IDENTITY - CREATIVE DIRECTION - DIGITAL DESIGN - WEB DEVELOPMENT
@@ -342,9 +343,9 @@ function getPathEndPointInDOM(
                  <div className="animate-card absolute inset-0 z-10 flex flex-col p-5 bg-black/20">
                    <h2 className="text-[#fff] text-base">
                           SHOP-COMMERCE. 
-                      <div className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
+                      <Link href="/detail" className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
                         <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
-                      </div>
+                      </Link>
                     </h2>
                   <div className="text-white text-4xl font-bold">
                     BRAND IDENTITY - CREATIVE DIRECTION - DIGITAL DESIGN - WEB DEVELOPMENT
@@ -387,9 +388,9 @@ function getPathEndPointInDOM(
                 <div className="animate-card absolute inset-0 z-10 flex flex-col p-5 bg-black/20">
                    <h2 className="text-[#fff] text-base">
                           SHOP-COMMERCE. 
-                      <div className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
+                      <Link href="/detail" className="btn-plus mb-2 w-fit p-[3px] mt-4  rounded-full bg-[black]">
                         <div className="text-[0.7rem] cursor-pointer text-[beige]">LEARN MORE</div>
-                      </div>
+                      </Link>
                     </h2>
                   <div className="text-white text-4xl font-bold">
                     BRAND IDENTITY - CREATIVE DIRECTION - DIGITAL DESIGN - WEB DEVELOPMENT
