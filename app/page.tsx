@@ -472,7 +472,7 @@ function getPathEndPointInDOM(
 
 
         
-          <section className="w-[100%] pt-[6rem] pb-[6rem] bg-black flex items-center justify-center">
+          <section className="w-[100%] mt-[5rem] pt-[6rem] pb-[6rem] bg-black flex items-center justify-center">
             <div className="w-[70%]">
             <div style={{ marginLeft:0 , color:"white"}} className="contact-title pb-5">
               THIS IS <br /> WHAT I DO
@@ -491,7 +491,7 @@ function getPathEndPointInDOM(
             </div>
 
 
-            <BezierDivider intensity={0.8}/>
+            <BezierDivider intensity={0.6}/>
 
             <div className="competence-container flex flex-row">
               <div className="competence-title">
@@ -545,7 +545,7 @@ function getPathEndPointInDOM(
 
 
 
-            <BezierDivider intensity={0.8}/>
+            <BezierDivider intensity={0.6}/>
             <div className="competence-container flex flex-row">
             
              
@@ -560,7 +560,7 @@ function getPathEndPointInDOM(
               <div className="text-sm max-w-[10px] text-black">(3)</div>
             </div>
 
-            <BezierDivider intensity={0.8}/>
+            <BezierDivider intensity={0.6}/>
 
             <div className="competence-container flex flex-row">
               <div className="competence-title">
@@ -576,7 +576,7 @@ function getPathEndPointInDOM(
 
 
 
-           <BezierDivider intensity={0.8}/>
+           <BezierDivider intensity={0.6}/>
 
             <div className="competence-container flex flex-row">
               <div className="competence-title">

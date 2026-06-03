@@ -377,10 +377,10 @@ export default function ContactPage() {
 
         {/* Form + Info Section */}
         <section className="contact-section">
-          <div className="contact-grid">
+          <div className="contact-grid pt-[6rem] pb-[6rem]">
             {/* Form */}
             <div className="contact-form-wrapper">
-              <div className="section-header" style={{ marginBottom: "2rem" }}>
+              <div className="section-header">
                 <h2 className="section-title-large text-white">GET IN TOUCH</h2>
                 <p className="section-subtitle-text">
                   Fill out the form below and I&apos;ll get back to you within 24 hours.

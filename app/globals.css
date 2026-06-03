@@ -178,7 +178,7 @@ body{
   display: flex;
   justify-content: center;
   height: auto;
-  padding: 5rem;
+  /* padding: 5rem; */
   padding-top: 7rem;
   
 }

@@ -110,7 +110,7 @@ export default function ProjectDetail() {
           stagger: 0.12,
           scrollTrigger: {
             trigger: infoRef.current,
-            start: "top 75%",
+            start: "top 70%",
           },
         }
       );
@@ -157,14 +157,14 @@ export default function ProjectDetail() {
 
           {/* ─── HERO ─── */}
           <div className="header w-full">
-            <div className="header-container flex flex-col">
-              <div ref={heroTitleRef} className="header-title uppercase" style={{ fontSize: "6rem"}}>
-                <span style={{width:"fit-content",margin:"0px",padding:"0px"}}>SHOP-COMMERCE.</span> <br />
-                <span style={{width:"fit-content", color:"black", backgroundColor:"white",margin:"0px",padding:"0px"}}>PROJECT DETAIL</span>
+            <div className="w-[75%] flex flex-col">
+              <div ref={heroTitleRef} className="contact-title uppercase">
+               SHOP-COMMERCE.<br />
+               PROJECT DETAIL
                 
               </div>
-              <div ref={heroMetaRef} className="body mt-10">
-                <p className="text-2xl text-gray-500">
+              <div ref={heroMetaRef} className="mt-5">
+                <p className="text-2xl text-gray-500 leading-none">
                   Brand Identity, Creative Direction, Digital Design, Web Development. 
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ipsam nam ullam sit mollitia porro
                   sequi atque fuga similique molestias suscipit aut dolores corrupti dolor labore illum, dicta iusto
@@ -175,7 +175,7 @@ export default function ProjectDetail() {
           </div>
 
           {/* ─── PROJECT INFO STRIP ─── */}
-          <div ref={infoRef} className="w-[80%] flex flex-row justify-between items-start py-5 mt-1">
+          <div ref={infoRef} className="w-[70%] flex flex-row justify-between items-start py-5 mt-1">
             <div className="info-item flex flex-col gap-1">
               <div className="text-xs uppercase tracking-widest text-gray-400">Client</div>
               <div className="text-lg text-black font-medium">Shop-Commerce Inc.</div>
@@ -195,10 +195,10 @@ export default function ProjectDetail() {
           </div>
 
           {/* ─── HERO IMAGE ─── */}
-          <ParallaxImage src="/7.webp" alt="Shop-Commerce Hero" strength={0.35} height={"80vh"} width={"90vw"} />
+          <ParallaxImage src="/7.webp" alt="Shop-Commerce Hero" strength={0.35} height={"80vh"} width={"70vw"} />
 
           {/* ─── THE CHALLENGE ─── */}
-          <section ref={challengeRef} className="w-[80%] section margin-top border-bottom-black border-2">
+          <section ref={challengeRef} className="w-[70%] section margin-top border-bottom-black border-2">
             <div className="w-full flex flex-col gap-10">
               <div className="flex flex-row justify-between items-start gap-10">
                 <div className="reveal-item text-[3rem] text-black font-bold w-1/2">The Challenge</div>
@@ -216,12 +216,12 @@ export default function ProjectDetail() {
           </section>
 
           {/* ─── FULL WIDTH IMAGE ─── */}
-          <div className="w-[90vw] my-10">
-            <ParallaxImage src="/6.webp" alt="Process" strength={0.25} height={"70vh"} width={"90vw"} />
+          <div className="w-[70vw] my-10">
+            <ParallaxImage src="/6.webp" alt="Process" strength={0.25} height={"70vh"} width={"70vw"} />
           </div>
 
           {/* ─── THE SOLUTION ─── */}
-          <section ref={solutionRef} className="w-[80%] section border-bottom-black border-2">
+          <section ref={solutionRef} className="w-[70%] section border-bottom-black border-2">
             <div className="w-full flex flex-col gap-10">
               <div className="flex flex-row justify-between items-start gap-10">
                 <div className="reveal-item text-[3rem] text-black font-bold w-1/2">The Solution</div>
@@ -268,7 +268,7 @@ export default function ProjectDetail() {
           </section>
 
           {/* ─── SERVICES / DELIVERABLES ─── */}
-          <section className="w-[80%] section border-bottom-black border-2">
+          <section className="w-[70%] section border-bottom-black border-2">
             <div style={{ marginLeft: 0 }} className="header-title mb-10">
               DELIVERABLES
             </div>
@@ -349,7 +349,7 @@ export default function ProjectDetail() {
                   </div>
                 </div>
                 <div className="relative min-w-[50vw] min-h-[40vh] max-w-[50vw] max-h-[40vh] overflow-hidden">
-                  <ParallaxImage src="/8.webp" alt="Next Project" strength={0.35} height={"70vh"} width={"60vw"} />
+                  <ParallaxImage src="/10.webp" alt="Next Project" strength={0.35} height={"70vh"} width={"60vw"} />
                   <div className="absolute inset-0 z-10 bg-black/10 group-hover:bg-black/0 transition-all duration-500" />
                 </div>
               </div>
