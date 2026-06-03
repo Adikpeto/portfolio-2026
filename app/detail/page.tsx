@@ -143,12 +143,12 @@ export default function ProjectDetail() {
           <div className="nav-bar">
             <Link href="/" className="nav-bar-logo text-black font-bold">Portfolio Me</Link>
             <div className="flex flex-col">
-              <div className="text-black text-sm">Work</div>
-              <div className="text-black text-sm">Portfolio</div>
-              <div className="text-black text-sm">Contact</div>
+              <div className="text-black nav-bar-link text-sm">Work</div>
+              <div className="text-black nav-bar-link text-sm">Portfolio</div>
+              <div className="text-black nav-bar-link text-sm">Contact</div>
             </div>
-            <div className="text-black text-sm">À Propos</div>
-            <a href="#footer"> <div className="text-black text-sm">Contact</div> </a>
+            <div className="text-black nav-bar-link text-sm">À Propos</div>
+            <a href="#footer"> <div className="text-black nav-bar-link text-sm">Contact</div> </a>
             <div className="text-black text-sm">Why Me</div>
           </div>
         </div>
@@ -159,7 +159,7 @@ export default function ProjectDetail() {
           <div className="header w-full">
             <div className="header-container flex flex-col">
               <div ref={heroTitleRef} className="header-title uppercase" style={{ fontSize: "6rem"}}>
-                <span style={{width:"fit-content", color:"white", backgroundColor:"black",margin:"0px",padding:"0px"}}>SHOP-COMMERCE.</span> <br />
+                <span style={{width:"fit-content",margin:"0px",padding:"0px"}}>SHOP-COMMERCE.</span> <br />
                 <span style={{width:"fit-content", color:"black", backgroundColor:"white",margin:"0px",padding:"0px"}}>PROJECT DETAIL</span>
                 
               </div>
@@ -175,7 +175,7 @@ export default function ProjectDetail() {
           </div>
 
           {/* ─── PROJECT INFO STRIP ─── */}
-          <div ref={infoRef} className="w-[80%] flex flex-row justify-between items-start py-10 mt-10">
+          <div ref={infoRef} className="w-[80%] flex flex-row justify-between items-start py-5 mt-1">
             <div className="info-item flex flex-col gap-1">
               <div className="text-xs uppercase tracking-widest text-gray-400">Client</div>
               <div className="text-lg text-black font-medium">Shop-Commerce Inc.</div>
