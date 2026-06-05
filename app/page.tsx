@@ -178,6 +178,64 @@ function getPathEndPointInDOM(
   }, [])
 
 
+  // ── Competence section animations ──
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+
+    const section = document.querySelector(".competence-section")
+    const heading = document.querySelector(".competence-heading")
+    const rows = gsap.utils.toArray<HTMLElement>(".competence-row")
+
+    if (!section || !heading) return
+
+    // Title reveal: clip-path wipe from bottom to top
+    gsap.to(heading, {
+      clipPath: "inset(0 0 0% 0)",
+      duration: 1.2,
+      ease: "power4.out",
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+    })
+
+    // Each competence row: staggered slide-up + fade-in
+    rows.forEach((row, index) => {
+      gsap.to(row, {
+        opacity: 1,
+        y: 0,
+        duration: 0.9,
+        delay: index * 0.12,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: row,
+          start: "top 90%",
+          toggleActions: "play none none none",
+        },
+      })
+
+      // Hover: title slides right & turns white, text becomes lighter
+      const title = row.querySelector(".competence-title") as HTMLElement
+      const text = row.querySelector(".competence-text") as HTMLElement
+      const num = row.querySelector(".competence-number") as HTMLElement
+
+      if (title) {
+        row.addEventListener("mouseenter", () => {
+          gsap.to(title, { x: 15, color: "#ffffff", duration: 0.4, ease: "power2.out" })
+          if (text) gsap.to(text, { color: "#aaaaaa", duration: 0.4, ease: "power2.out" })
+          if (num) gsap.to(num, { color: "#ffffff", scale: 1.1, duration: 0.3, ease: "back.out(2)" })
+        })
+        row.addEventListener("mouseleave", () => {
+          gsap.to(title, { x: 0, color: "#cacaca", duration: 0.4, ease: "power2.out" })
+          if (text) gsap.to(text, { color: "gray", duration: 0.4, ease: "power2.out" })
+          if (num) gsap.to(num, { color: "black", scale: 1, duration: 0.3, ease: "power2.out" })
+        })
+      }
+    })
+  }, [])
+
+
 
   return (
     <ReactLenis root>
@@ -472,13 +530,13 @@ function getPathEndPointInDOM(
 
 
         
-          <section className="w-[100%] mt-[5rem] pt-[6rem] pb-[6rem] bg-black flex items-center justify-center">
+          <section className="competence-section w-[100%] mt-[5rem] pt-[6rem] pb-[6rem] bg-black flex items-center justify-center">
             <div className="w-[70%]">
-            <div style={{ marginLeft:0 , color:"white"}} className="contact-title pb-5">
+            <div style={{ marginLeft:0 , color:"white", clipPath: "inset(0 0 100% 0)" }} className="contact-title pb-5 competence-heading">
               THIS IS <br /> WHAT I DO
             </div>
 
-            <div className="competence-container flex flex-row">
+            <div className="competence-container competence-row flex flex-row" style={{ opacity: 0, transform: "translateY(60px)" }}>
               <div className="competence-title">
                 Creative Direction
               </div>
@@ -487,13 +545,13 @@ function getPathEndPointInDOM(
                 English is a West Germanic language that emerged in early medieval England and has since become a global lingua franca.
               </div>
 
-              <div className="text-sm max-w-[10px] text-black">(1)</div>
+              <div className="competence-number text-sm max-w-[10px] text-black">(1)</div>
             </div>
 
 
             <BezierDivider intensity={0.6}/>
 
-            <div className="competence-container flex flex-row">
+            <div className="competence-container competence-row flex flex-row" style={{ opacity: 0, transform: "translateY(60px)" }}>
               <div className="competence-title">
                 <div>
                   Creative Direction
@@ -508,7 +566,7 @@ function getPathEndPointInDOM(
                 English is a West Germanic language that emerged in early medieval England and has since become a global lingua franca.
               </div>
 
-              <div className="text-sm max-w-[10px] text-black">(2)</div>
+              <div className="competence-number text-sm max-w-[10px] text-black">(2)</div>
             </div>
 
 
@@ -546,7 +604,7 @@ function getPathEndPointInDOM(
 
 
             <BezierDivider intensity={0.6}/>
-            <div className="competence-container flex flex-row">
+            <div className="competence-container competence-row flex flex-row" style={{ opacity: 0, transform: "translateY(60px)" }}>
             
              
               <div className="competence-title">
@@ -557,12 +615,12 @@ function getPathEndPointInDOM(
                 English is a West Germanic language that emerged in early medieval England and has since become a global  in early medieval England and lingua franca.
               </div>
 
-              <div className="text-sm max-w-[10px] text-black">(3)</div>
+              <div className="competence-number text-sm max-w-[10px] text-black">(3)</div>
             </div>
 
             <BezierDivider intensity={0.6}/>
 
-            <div className="competence-container flex flex-row">
+            <div className="competence-container competence-row flex flex-row" style={{ opacity: 0, transform: "translateY(60px)" }}>
               <div className="competence-title">
                 Front-end Dev
               </div>
@@ -571,14 +629,14 @@ function getPathEndPointInDOM(
                 Early medieval England and has since become a global lingua franca.
               </div>
 
-              <div className="text-sm max-w-[10px] text-black">(4)</div>
+              <div className="competence-number text-sm max-w-[10px] text-black">(4)</div>
             </div>
 
 
 
            <BezierDivider intensity={0.6}/>
 
-            <div className="competence-container flex flex-row">
+            <div className="competence-container competence-row flex flex-row" style={{ opacity: 0, transform: "translateY(60px)" }}>
               <div className="competence-title">
                 Brading Mark
               </div>
@@ -587,7 +645,7 @@ function getPathEndPointInDOM(
                 Germanic language that emerged in early medieval England and has since become a global lingua franca.
               </div>
 
-              <div className="text-sm max-w-[10px] text-black">(5)</div>
+              <div className="competence-number text-sm max-w-[10px] text-black">(5)</div>
             </div>
 
 

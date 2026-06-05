@@ -156,8 +156,8 @@ export default function ProjectDetail() {
         <div className="spoolight" style={{ marginTop: "4rem" }}>
 
           {/* ─── HERO ─── */}
-          <div className="header w-full">
-            <div className="w-[75%] flex flex-col">
+          <div className="header w-full mb-[7rem]">
+            <div className="w-[70%] flex flex-col">
               <div ref={heroTitleRef} className="contact-title uppercase">
                SHOP-COMMERCE.<br />
                PROJECT DETAIL
