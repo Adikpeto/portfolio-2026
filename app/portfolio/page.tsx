@@ -266,7 +266,9 @@ export default function PortfolioPage() {
             <Link href="/contact">
               <div className="text-black text-sm">Contact</div>
             </Link>
-            <div className="text-black text-sm">Why Me</div>
+            <Link href="/about">
+              <div className="text-black text-sm">Why Me</div>
+            </Link>
           </div>
         </div>
 

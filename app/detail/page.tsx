@@ -143,13 +143,13 @@ export default function ProjectDetail() {
           <div className="nav-bar">
             <Link href="/" className="nav-bar-logo text-black font-bold">Portfolio Me</Link>
             <div className="flex flex-col">
-              <div className="text-black nav-bar-link text-sm">Work</div>
-              <div className="text-black nav-bar-link text-sm">Portfolio</div>
-              <div className="text-black nav-bar-link text-sm">Contact</div>
+              <Link href="/"><div className="text-black nav-bar-link text-sm">Work</div></Link>
+              <Link href="/portfolio"><div className="text-black nav-bar-link text-sm">Portfolio</div></Link>
+              <Link href="/contact"><div className="text-black nav-bar-link text-sm">Contact</div></Link>
             </div>
-            <div className="text-black nav-bar-link text-sm">À Propos</div>
-            <a href="#footer"> <div className="text-black nav-bar-link text-sm">Contact</div> </a>
-            <div className="text-black text-sm">Why Me</div>
+            <Link href="/about"><div className="text-black nav-bar-link text-sm">À Propos</div></Link>
+            <Link href="/contact"><div className="text-black nav-bar-link text-sm">Contact</div></Link>
+            <Link href="/about"><div className="text-black text-sm">Why Me</div></Link>
           </div>
         </div>
 

@@ -223,8 +223,12 @@ export default function AboutPage() {
               <Link href="/">
                 <div className="text-black nav-bar-link text-sm">Work</div>
               </Link>
-              <div className="text-black nav-bar-link text-sm">Portfolio</div>
-              <div className="text-black nav-bar-link text-sm">Contact</div>
+              <Link href="/portfolio">
+                <div className="text-black nav-bar-link text-sm">Portfolio</div>
+              </Link>
+              <Link href="/contact">
+                <div className="text-black nav-bar-link text-sm">Contact</div>
+              </Link>
             </div>
             <Link href="/about">
               <div className="text-black nav-bar-link text-sm">À Propos</div>
@@ -232,7 +236,9 @@ export default function AboutPage() {
             <Link href="/contact">
               <div className="text-black text-sm">Contact</div>
             </Link>
-            <div className="text-black text-sm">Why Me</div>
+            <Link href="/about">
+              <div className="text-black text-sm">Why Me</div>
+            </Link>
           </div>
         </div>
 

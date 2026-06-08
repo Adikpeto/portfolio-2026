@@ -2,7 +2,7 @@
 
 import { useLenis } from "lenis/react";
 import React, { useRef, useEffect } from "react";
-import WaterImage from "./WaterImg";
+
 
 const lerp = (start: number, end: number, factor: number) =>
   start + (end - start) * factor;

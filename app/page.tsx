@@ -9,7 +9,6 @@ import ReactLenis from "lenis/react";
 import ParallaxImage from "./components/ParallaxImage";
 import Footer from "./components/Footer";
 import BezierDivider from "./components/BezierDivider";
-import WaterImage from "./components/WaterImg";
 import Link from "next/link";
 
 const phrase = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.";
@@ -245,17 +244,15 @@ function getPathEndPointInDOM(
         </div> */}
         <div className="container">
           <div className="nav-bar">
-            <div className="nav-bar-logo text-black font-bold">Portfolio Me</div>
+            <Link href="/" className="nav-bar-logo text-black font-bold">Portfolio Me</Link>
             <div className="flex flex-col">
-              <div className="text-black nav-bar-link text-sm">Work</div>
-              <div className="text-black nav-bar-link text-sm">Portfolio</div>
-              <div className="text-black nav-bar-link text-sm">Contact</div>
+              <Link href="/"><div className="text-black nav-bar-link text-sm">Work</div></Link>
+              <Link href="/portfolio"><div className="text-black nav-bar-link text-sm">Portfolio</div></Link>
+              <Link href="/contact"><div className="text-black nav-bar-link text-sm">Contact</div></Link>
             </div>
-            <div className="text-black nav-bar-link text-sm">À Propos</div>
-            <Link href="/contact"> <div className="text-black text-sm">Contact</div> </Link>
-            
-            <div className="text-black text-sm">Why Me</div>
-
+            <Link href="/about"><div className="text-black nav-bar-link text-sm">À Propos</div></Link>
+            <Link href="/contact"><div className="text-black text-sm">Contact</div></Link>
+            <Link href="/about"><div className="text-black text-sm">Why Me</div></Link>
           </div>
         </div>
 
