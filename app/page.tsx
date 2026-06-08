@@ -239,20 +239,32 @@ function getPathEndPointInDOM(
   return (
     <ReactLenis root>
       <div className="main" ref={container}>
-        {/* <div className="font-fixed">
-            <div className="font-fixed-text">RECENT PROJECT I DO</div>
-        </div> */}
+        {/* NavBar */}
         <div className="container">
           <div className="nav-bar">
-            <Link href="/" className="nav-bar-logo text-black font-bold">Portfolio Me</Link>
+            <Link href="/">
+              <div className="nav-bar-logo text-black font-bold">Portfolio Me</div>
+            </Link>
             <div className="flex flex-col">
-              <Link href="/"><div className="text-black nav-bar-link text-sm">Work</div></Link>
-              <Link href="/portfolio"><div className="text-black nav-bar-link text-sm">Portfolio</div></Link>
-              <Link href="/contact"><div className="text-black nav-bar-link text-sm">Contact</div></Link>
+              <Link href="/">
+                <div className="text-black nav-bar-link text-sm">Work</div>
+              </Link>
+              <Link href="/portfolio">
+                <div className="text-black nav-bar-link text-sm">Portfolio</div>
+              </Link>
+              <Link href="/contact">
+                <div className="text-black nav-bar-link text-sm">Contact</div>
+              </Link>
             </div>
-            <Link href="/about"><div className="text-black nav-bar-link text-sm">À Propos</div></Link>
-            <Link href="/contact"><div className="text-black text-sm">Contact</div></Link>
-            <Link href="/about"><div className="text-black text-sm">Why Me</div></Link>
+            <Link href="/about">
+              <div className="text-black nav-bar-link text-sm">À Propos</div>
+            </Link>
+            <Link href="/contact">
+              <div className="text-black text-sm">Contact</div>
+            </Link>
+            <Link href="/about">
+              <div className="text-black text-sm">Why Me</div>
+            </Link>
           </div>
         </div>
 
