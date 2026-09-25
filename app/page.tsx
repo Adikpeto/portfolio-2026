@@ -370,7 +370,7 @@ function getPathEndPointInDOM(
 
               <div className="flex flex-col">
                 <div className="flex flex-col">
-                  <div className="text-[3rem] leading-none text-black font-bold">UI/UX Design</div>
+                  <div className="text-[3rem] leading-none text-black font-bold">UI/UX Designer</div>
 
 
                 </div>
