@@ -245,12 +245,16 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    const formDataObj = new FormData(e.target as HTMLFormElement);
-    formDataObj.append("access_key", "1738709c-e745-403e-a552-19a895371d2c");
-    
     await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formDataObj,
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        access_key: "1738709c-e745-403e-a552-19a895371d2c",
+        ...formData,
+      }),
     });
 
     setSubmitted(true);
