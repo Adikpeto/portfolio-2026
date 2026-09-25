@@ -11,70 +11,77 @@ import Footer from "../components/Footer";
 
 const experiences = [
   {
-    year: "2024 — Present",
-    role: "Freelance Creative Developer",
-    company: "Self-Employed",
+    year: "Actuel",
+    role: "DÉVELOPPEUR FULL STACK & MOBILE",
+    company: "Ylomi - Cotonou",
     description:
-      "Delivering end-to-end digital experiences for brands and startups. Combining creative direction with technical implementation to build memorable web experiences.",
+      "Développement d'applications web et mobiles à fort impact avec Vue.js, React, Laravel et Flutter. Optimisation continue de l'expérience utilisateur et garantie d'une ergonomie irréprochable sur l'ensemble des plateformes.",
   },
   {
-    year: "2022 — 2024",
-    role: "Front-end Developer",
-    company: "Creative Studio",
+    year: "Précédent",
+    role: "DÉVELOPPEUR MOBILE",
+    company: "Cauris Dev - Cotonou",
     description:
-      "Led front-end development for award-winning digital campaigns. Built interactive experiences using Three.js, GSAP, and modern JavaScript frameworks.",
+      "Développement d'applications mobiles avancées avec React Native. Conception d'interfaces utilisateur ultra-fluides, intégration d'APIs complexes et mise en place de tests poussés pour garantir une fiabilité et une stabilité optimales en production.",
   },
   {
-    year: "2021 — 2022",
-    role: "UI/UX Designer & Developer",
-    company: "Digital Agency",
+    year: "Précédent",
+    role: "DÉVELOPPEUR FULL-STACK",
+    company: "KRYPTAPAY - Cotonou",
     description:
-      "Designed and developed responsive web applications for clients across fashion, tech, and lifestyle sectors. Focused on user-centered design principles.",
+      "Création d'une application mobile sous React Native et d'une plateforme web réactive. Conception d'une architecture backend solide et sécurisée en Node.js, validée par des tests unitaires rigoureux avec Jest.",
   },
   {
-    year: "2020 — 2021",
-    role: "Junior Developer",
-    company: "Tech Startup",
+    year: "Précédent",
+    role: "DÉVELOPPEUR WEB",
+    company: "La Vedette Media - Cotonou",
     description:
-      "Built product features, collaborated on design systems, and learned the foundations of scalable front-end architecture.",
+      "Développement d’un SDK de pointe en JavaScript, TypeScript et PHP, facilitant grandement l'intégration technique et les transactions pour un agrégateur de paiement de premier plan.",
   },
+  {
+    year: "Précédent",
+    role: "DÉVELOPPEUR WEB FULL-STACK",
+    company: "TIC Agro Business Center - Cotonou",
+    description:
+      "Création de A à Z d'une plateforme e-commerce agricole. Architecture de l'interface dynamique sous Next.js et gestion performante des bases de données temps réel via Firebase.",
+  }
 ];
 
 const skills = [
   {
-    category: "DESIGN",
-    items: ["UI/UX Design", "Brand Identity", "Design Systems", "Motion Design", "Figma", "Adobe Suite"],
+    category: "FRONT-END & MOBILE",
+    items: ["React & JavaScript", "Angular, TypeScript", "Flutter, React Native", "Apache Cordova", "Vue.js", "Electron"],
   },
   {
-    category: "DEVELOPMENT",
-    items: ["React / Next.js", "Vue.js / Nuxt", "TypeScript", "Three.js / WebGL", "GSAP", "Node.js"],
+    category: "BACK-END & DONNÉES",
+    items: ["Node.js, Express", "Laravel, PHP", "Prisma", "SQL", "Firebase", "Jest"],
   },
   {
-    category: "TOOLS",
-    items: ["Git / GitHub", "Vercel", "Figma", "Notion", "Jira", "VS Code"],
+    category: "ATOUTS & DIPLÔMES",
+    items: ["Polyvalence Full-Stack", "Résolution de problèmes", "Conception & Architecture", "Licence Professionnelle SIL (2022-2023)"],
   },
 ];
 
 const values = [
   {
     number: "01",
-    title: "Craft Over Speed",
-    text: "I believe in taking the time to do things right. Every detail matters — from typography to micro-interactions. Quality is never negotiable.",
+    title: "Polyvalence Full-Stack",
+    text: "Maîtrise de l'ensemble du cycle de développement, de la conception de l'architecture backend jusqu'à la réalisation d'interfaces fluides.",
   },
   {
     number: "02",
-    title: "Design With Purpose",
-    text: "Beautiful design is meaningless if it doesn't serve the user. Every decision I make is rooted in strategy, research, and genuine empathy for the end user.",
+    title: "Résolution de problèmes",
+    text: "Avide de défis techniques, j'analyse les situations complexes pour y apporter des solutions efficaces et innovantes.",
   },
   {
     number: "03",
-    title: "Continuous Growth",
-    text: "The digital landscape evolves daily. I stay curious, experiment with new technologies, and constantly push the boundaries of what's possible on the web.",
+    title: "Orientation produit",
+    text: "Je mets toujours l'expérience utilisateur au centre de mes décisions, avec l'objectif de créer des produits digitaux performants et utiles.",
   },
   {
     number: "04",
-    title: "Transparent Partnership",
-    text: "I treat every project as a true collaboration. Open communication, honest feedback, and mutual respect are the foundation of great work.",
+    title: "Adaptabilité & Autonomie",
+    text: "Je m'adapte rapidement aux nouveaux environnements et technologies pour répondre aux besoins changeants des projets.",
   },
 ];
 
@@ -217,7 +224,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="nav-bar">
             <Link href="/">
-              <div className="nav-bar-logo text-black font-bold">Portfolio Me</div>
+              <div className="nav-bar-logo text-black font-bold">ADIKPETO ARISTIDE</div>
             </Link>
             <div className="flex flex-col">
               <Link href="/">
@@ -245,11 +252,11 @@ export default function AboutPage() {
         {/* Marquee */}
         <section className="contact-marquee about-marquee">
           <div ref={marqueeRef} className="marquee-wrapper">
-            <span className="marquee-text">CREATIVE DEVELOPER — </span>
-            <span className="marquee-text">DESIGNER — </span>
+            <span className="marquee-text">FULL STACK DEVELOPER — </span>
+            <span className="marquee-text">MOBILE DEVELOPER — </span>
             <span className="marquee-text">PROBLEM SOLVER — </span>
-            <span className="marquee-text">CREATIVE DEVELOPER — </span>
-            <span className="marquee-text">DESIGNER — </span>
+            <span className="marquee-text">FULL STACK DEVELOPER — </span>
+            <span className="marquee-text">MOBILE DEVELOPER — </span>
             <span className="marquee-text">PROBLEM SOLVER — </span>
           </div>
         </section>
@@ -267,21 +274,19 @@ export default function AboutPage() {
               </div>
               <div ref={introRef} className="about-hero-right">
                 <p className="intro-animate about-intro-large">
-                  I&apos;m a creative developer based in Paris, passionate about building
-                  digital experiences that are both visually stunning and technically sound.
+                  Développeur Full Stack & Mobile passionné par la création d'expériences
+                  numériques percutantes, basé à Cotonou.
                 </p>
                 <p className="intro-animate about-intro-text">
-                  With over 4 years of experience in the digital space, I bridge the gap
-                  between design and development. I don&apos;t just build websites — I craft
-                  digital experiences that tell stories, engage users, and drive results.
-                  My approach combines creative thinking with technical precision, ensuring
-                  every project is not only beautiful but also performant and accessible.
+                  Fort d'une expertise polyvalente couvrant des technologies telles que React, Laravel,
+                  Flutter, et Node.js, je conçois des applications robustes, évolutives et centrées sur
+                  l'utilisateur. Orienté solutions et avide de défis techniques, je transforme vos
+                  idées en produits digitaux hautement performants.
                 </p>
                 <p className="intro-animate about-intro-text">
-                  I&apos;ve had the privilege of working with ambitious brands, innovative startups,
-                  and forward-thinking agencies. Each collaboration has shaped my perspective
-                  and refined my craft. When I&apos;m not coding, you&apos;ll find me exploring design
-                  inspiration, learning new technologies, or sketching ideas for the next big thing.
+                  Mon parcours m'a amené à collaborer avec diverses entreprises et startups,
+                  de l'e-commerce à la fintech. Je mets un point d'honneur à allier une conception
+                  d'architecture backend solide à des interfaces utilisateur ultra-fluides.
                 </p>
               </div>
             </div>

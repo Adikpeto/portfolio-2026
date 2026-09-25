@@ -50,8 +50,8 @@ const Section2 = () => {
            
             <div className='flex flex-col'>
                 <div ref={slider} className='overflow-hidden whitespace-nowrap flex flex-row items-center gap-[3rem]'>
-                    <p ref={firstText} className='whitespace-nowrap text-[14vw]' >Freelance Developer - </p>
-                    <p ref={secondText} className='whitespace-nowrap text-[14vw]'>Freelance Developer - </p>
+                    <p ref={firstText} className='whitespace-nowrap text-[14vw]' >ADIKPETO ARISTIDE - FULL STACK & MOBILE - </p>
+                    <p ref={secondText} className='whitespace-nowrap text-[14vw]'>ADIKPETO ARISTIDE - FULL STACK & MOBILE - </p>
                 </div>
                 {/* <h1 className='text-[14vw] leading-[0.8] mt-10'>Sticky Footer</h1> */}
                 <p>©copyright</p>

@@ -275,7 +275,7 @@ export default function ContactPage() {
         <div className="container">
           <div className="nav-bar">
             <Link href="/">
-              <div className="nav-bar-logo text-black font-bold">Portfolio Me</div>
+              <div className="nav-bar-logo text-black font-bold">ADIKPETO ARISTIDE</div>
             </Link>
             <div className="flex flex-col">
               <Link href="/">
@@ -591,8 +591,8 @@ export default function ContactPage() {
             <div ref={infoRef} className="contact-info">
               <div className="info-item">
                 <h3 className="info-label">EMAIL</h3>
-                <a href="mailto:hello@portfolio.me" className="info-value">
-                  hello@portfolio.me
+                <a href="mailto:adikpetoaristidezeus@gmail.com" className="info-value">
+                  adikpetoaristidezeus@gmail.com
                 </a>
               </div>
 
@@ -600,8 +600,8 @@ export default function ContactPage() {
 
               <div className="info-item">
                 <h3 className="info-label">PHONE</h3>
-                <a href="tel:+33612345678" className="info-value">
-                  +33 6 12 34 56 78
+                <a href="tel:+22958387857" className="info-value">
+                  +229 58387857
                 </a>
               </div>
 
@@ -609,7 +609,7 @@ export default function ContactPage() {
 
               <div className="info-item">
                 <h3 className="info-label">LOCATION</h3>
-                <p className="info-value">Paris, France</p>
+                <p className="info-value">Cotonou, Bénin</p>
               </div>
 
               <BezierDivider intensity={0.5} />
@@ -634,16 +634,19 @@ export default function ContactPage() {
               <div ref={socialRef} className="social-section">
                 <h3 className="info-label">FOLLOW ME</h3>
                 <div className="social-links">
-                  {["Twitter / X", "Instagram", "LinkedIn", "Dribbble", "GitHub", "Behance"].map(
-                    (name) => (
+                  {[
+                    { name: "LinkedIn", url: "https://linkedin.com/in/aristide-adikpeto-développeur-web-mobile-desktop" },
+                    { name: "GitHub", url: "#" }
+                  ].map(
+                    (social) => (
                       <a
-                        key={name}
-                        href="#"
+                        key={social.name}
+                        href={social.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="social-link"
                       >
-                        {name}
+                        {social.name}
                       </a>
                     )
                   )}

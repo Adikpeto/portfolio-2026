@@ -11,87 +11,57 @@ import Footer from "../components/Footer";
 const projects = [
   {
     id: 1,
-    title: "SHOP-COMMERCE",
+    title: "PLATEFORME E-COMMERCE",
     category: "Web Development",
-    tags: "BRAND IDENTITY — CREATIVE DIRECTION — DIGITAL DESIGN",
+    tags: "NEXT.JS — FIREBASE — FULL-STACK",
     image: "/1.webp",
-    year: "2026",
+    year: "2023",
     description:
-      "A full e-commerce platform built with Next.js featuring headless CMS integration, seamless payment processing, and sub-second load times.",
+      "Création de A à Z d'une plateforme e-commerce agricole. Architecture de l'interface dynamique sous Next.js et gestion performante des bases de données temps réel via Firebase.",
   },
   {
     id: 2,
-    title: "ARTISAN STUDIO",
-    category: "UI/UX Design",
-    tags: "UI/UX DESIGN — MOTION DESIGN — PROTOTYPING",
-    image: "/2.webp",
-    year: "2025",
+    title: "KRYPTAPAY",
+    category: "App Development",
+    tags: "REACT NATIVE — NODE.JS — JEST",
+    image: "/9.webp",
+    year: "2023",
     description:
-      "An immersive portfolio platform for artisan craftsmen, combining elegant typography with rich micro-interactions to tell each maker's story.",
+      "Création d'une application mobile sous React Native et d'une plateforme web réactive. Conception d'une architecture backend solide et sécurisée en Node.js, validée par des tests unitaires.",
   },
   {
     id: 3,
-    title: "LUMINAIRE",
-    category: "Creative Direction",
-    tags: "CREATIVE DIRECTION — BRAND IDENTITY — ART DIRECTION",
+    title: "SDK DE PAIEMENT",
+    category: "Web Development",
+    tags: "JAVASCRIPT — TYPESCRIPT — PHP",
     image: "/7.webp",
-    year: "2025",
+    year: "2022",
     description:
-      "Complete brand overhaul for a luxury lighting company. From logo design to a fully immersive digital showroom experience.",
+      "Développement d’un SDK de pointe facilitant grandement l'intégration technique et les transactions pour un agrégateur de paiement de premier plan.",
   },
   {
     id: 4,
-    title: "NOVA FINANCE",
-    category: "Web Development",
-    tags: "WEB DEVELOPMENT — UI/UX DESIGN — FINTECH",
+    title: "CAURIS DEV APP",
+    category: "App Development",
+    tags: "REACT NATIVE — API INTEGRATION — TESTS",
     image: "/10.webp",
-    year: "2025",
+    year: "2024",
     description:
-      "A fintech dashboard reimagined. Real-time data visualization, fluid transitions, and an interface that makes complex finance feel intuitive.",
+      "Développement d'applications mobiles avancées. Conception d'interfaces utilisateur ultra-fluides, intégration d'APIs complexes et mise en place de tests poussés.",
   },
   {
     id: 5,
-    title: "TERRACOTTA",
-    category: "Branding",
-    tags: "BRANDING — CREATIVE DIRECTION — PACKAGING",
+    title: "YLOMI APP",
+    category: "Full Stack & Mobile",
+    tags: "VUE.JS — REACT — LARAVEL — FLUTTER",
     image: "/6.webp",
     year: "2024",
     description:
-      "Brand identity and packaging design for an organic skincare line. Earthy tones, tactile materials, and a design language rooted in nature.",
-  },
-  {
-    id: 6,
-    title: "ZENITH APP",
-    category: "UI/UX Design",
-    tags: "MOBILE APP — UI/UX DESIGN — MOTION DESIGN",
-    image: "/9.webp",
-    year: "2024",
-    description:
-      "A wellness app designed around mindfulness. Calm aesthetics, thoughtful animations, and an experience that promotes digital well-being.",
-  },
-  {
-    id: 7,
-    title: "ECHO RECORDS",
-    category: "Creative Direction",
-    tags: "CREATIVE DIRECTION — WEB DESIGN — VISUAL IDENTITY",
-    image: "/3.webp",
-    year: "2024",
-    description:
-      "Digital presence for an independent record label. A sonic-inspired visual language with interactive audio experiences woven into the design.",
-  },
-  {
-    id: 8,
-    title: "PRISM GALLERY",
-    category: "Web Development",
-    tags: "WEB DEVELOPMENT — THREE.JS — CREATIVE CODING",
-    image: "/5.webp",
-    year: "2023",
-    description:
-      "An online 3D art gallery leveraging WebGL and Three.js. Visitors navigate a virtual space to discover and interact with digital artworks.",
-  },
+      "Développement d'applications web et mobiles à fort impact. Optimisation continue de l'expérience utilisateur et garantie d'une ergonomie irréprochable.",
+  }
 ];
 
-const categories = ["All", "Web Development", "UI/UX Design", "Creative Direction", "Branding"];
+const categories = ["All", "Web Development", "App Development", "Full Stack & Mobile"];
 
 export default function PortfolioPage() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -247,7 +217,7 @@ export default function PortfolioPage() {
         <div className="container">
           <div className="nav-bar">
             <Link href="/" className="nav-bar-logo text-black font-bold">
-              Portfolio Me
+              ADIKPETO ARISTIDE
             </Link>
             <div className="flex flex-col">
               <Link href="/">
